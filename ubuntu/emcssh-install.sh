@@ -9,7 +9,7 @@ getent passwd emc >/dev/null || { echo "User 'emc' not found"; exit 1; }
 
 apt-get -y install wget make libcurl4-openssl-dev libjansson-dev
 
-wget https://dl.dropboxusercontent.com/u/15852900/emercoin/emcssh-0.0.3.tar.gz
+wget http://emercoin.info/emcwallet/emcssh-0.0.3.tar.gz
 tar xvzf emcssh-0.0.3.tar.gz
 rm emcssh-0.0.3.tar.gz
 cd emcssh-0.0.3
