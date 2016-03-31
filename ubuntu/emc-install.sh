@@ -6,7 +6,7 @@ getent passwd emc >/dev/null && { echo "User 'emc' already exists"; exit 1; }
 
 apt-get -y install wget pwgen openssl
 
-wget https://dl.dropboxusercontent.com/u/15852900/emercoin/emercoin-0.3.7-linux.tar.gz
+wget https://sourceforge.net/projects/emercoin/files/0.3.7/emercoin-0.3.7-linux.tar.gz
 tar xvzf emercoin-0.3.7-linux.tar.gz
 rm emercoin-0.3.7-linux.tar.gz
 cp emercoin-0.3.7-linux/bin/64/emercoind /usr/local/bin
@@ -51,7 +51,7 @@ sudo -u emc emercoind -datadir=/var/lib/emc/.emercoin \$*
 EOF
 chmod +x /usr/local/bin/emc
 
-wget https://dl.dropboxusercontent.com/u/15852900/emercoin/emercoind.initd
+wget http://emercoin.info/emcwallet/emercoind.initd
 mv emercoind.initd /etc/init.d/emercoind
 chmod +x /etc/init.d/emercoind
 update-rc.d emercoind defaults
