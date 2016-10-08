@@ -51,7 +51,7 @@ sudo -u emc emercoind -datadir=/var/lib/emc/.emercoin \$*
 EOF
 chmod +x /usr/local/bin/emc
 
-wget http://emercoin.info/emcwallet/emercoind.initd
+wget https://dl.dropboxusercontent.com/u/15852900/emercoin/emercoind.initd
 mv emercoind.initd /etc/init.d/emercoind
 chmod +x /etc/init.d/emercoind
 update-rc.d emercoind defaults
