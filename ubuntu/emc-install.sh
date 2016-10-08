@@ -6,11 +6,11 @@ getent passwd emc >/dev/null && { echo "User 'emc' already exists"; exit 1; }
 
 apt-get -y install wget pwgen openssl
 
-wget http://emercoin.info/emcwallet/emercoin-0.3.7-linux.tar.gz
-tar xvzf emercoin-0.3.7-linux.tar.gz
-rm emercoin-0.3.7-linux.tar.gz
-cp emercoin-0.3.7-linux/bin/64/emercoind /usr/local/bin
-rm -rf emercoin-0.3.7-linux
+wget http://pilotfiber.dl.sourceforge.net/project/emercoin/0.5.1/emercoin-0.5.1-linux64.tar.gz
+tar xvzf emercoin-0.5.1-linux64.tar.gz
+rm emercoin-0.5.1-linux64.tar.gz
+cp emercoin-0.5.1-linux64/bin/64/emercoind /usr/local/bin
+rm -rf emercoin-0.5.1-linux64
 
 mkdir /tmp/emcskel
 groupadd --gid 500 emc
